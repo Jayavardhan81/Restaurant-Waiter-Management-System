@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <!-- table section -->
+        <div id="table-section">
+            <h2>Table</h2>
+<input type="text" id="table-search" placeholder="search by table name" onchange="filtertable()">
+<div id="table-container"></div>       
+</div>
+        <!-- menu section -->
+        <div id="menu-section">
+            <h2>Menu</h2>
+            <input type="text" id="menu-search" placeholder="search by item name" onchange="filtermenu()">
+
+        </div>
+        <div id="menu-container"></div>
+    </div>
+    <!-- modal section for order -->
+     <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span>&times;</span>
+              <div id="modal-body"></div>
+        </div>
+     </div>
+</body>
+</html>
+<script src="index.js"></script>
